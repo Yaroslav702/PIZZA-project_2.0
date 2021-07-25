@@ -482,9 +482,10 @@ body {
         justify-content: center;
     }
 
-    .page-header{
+    .page-header, .nav{
+        flex-direction: column;
         height: auto;
-    
+        align-items: flex-start;
     }
 
     .logo{
@@ -496,7 +497,4 @@ body {
 
     }
 
-    .nav{
-        display: none;
-    }
 }
