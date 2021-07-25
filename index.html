@@ -414,12 +414,10 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', function (event) {
         if (window.scrollY > 200) {
             document.getElementById('header').classList.add('header__scrolled');
-            document.getElementById('nav__mobile').classList.add('nav__mobile-scrolled');
         }
 
         else {
             document.getElementById('header').classList.remove('header__scrolled');
-            document.getElementById('nav__mobile').classList.remove('nav__mobile-scrolled')
         }
     });
 
