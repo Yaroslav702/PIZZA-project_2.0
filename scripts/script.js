@@ -32,15 +32,3 @@ document.addEventListener('DOMContentLoaded', function () {
     listenForClick('trade__btn', scrollToElement, 'menu');
     listenForClick('header__logo', scrollToElement, 'hero');
 });
-
-
-var BurgerMenu = document.getElementById('burger');
-var mobileNav = document.getElementById('nav__mobile');
-
-document.addEventListener('DOMContentLoaded', function () {
-    BurgerMenu.function() {
-        if BurgerMenu.click(){
-            mobileNav.classList.add('nav__mobile-active')
-        }
-    }
-}
