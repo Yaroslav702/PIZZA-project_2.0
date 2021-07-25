@@ -22,11 +22,43 @@ body {
 }
 
 
-
+.container{
+    position: relative;
+}
 /* =========================================
                Header/Footer
    =========================================
 */
+
+.hamburger__icon{
+    display: none;
+
+    cursor: pointer;
+}
+
+.nav__mobile{
+    z-index: 2;
+
+    position: fixed;
+    top: 53px;
+
+    list-style: none;
+    width: 100%;
+ 
+    padding: 0;
+
+    display: none;
+}
+
+
+.nav__mobile-active{
+    display: block;
+}
+
+.nav__mobile-scrolled{
+    background-color: #3c3c3c;
+}
+
 
 .page-header {
     width: 100%;
@@ -180,6 +212,8 @@ body {
     padding: 8px 20px;
 
     transition-duration: 1s;
+
+    cursor: pointer;
 }
 
 
@@ -228,6 +262,7 @@ body {
     padding: 10px;
     background-color: #f0ecdf;
     border-radius: 10px;
+
 }
 
 .card:hover {
@@ -385,13 +420,11 @@ body {
 
 @media screen and (max-width: 600px) {
     .cards{
-        flex-direction: column;
         width: 100%;
-        margin: 0 auto 25px;
+        justify-content: center;
     }
 
     .card{
-        align-self: center;
         border-bottom: 0.5px solid rgb(230, 164, 66);
         width: 100%;
     }
@@ -402,9 +435,7 @@ body {
     }
 
 
-    .page-header, .nav{
-        flex-direction: column;
-        align-items: flex-start;
+    .page-header{
         height: auto;
     }
 
@@ -448,15 +479,24 @@ body {
 @media screen and (max-width: 750px){
     .card{
         width: 90%;
+        justify-content: center;
     }
 
-    .page-header, .nav{
-        flex-direction: column;
-        align-items: flex-start;
+    .page-header{
         height: auto;
+    
     }
 
     .logo{
         align-self: flex-end;
+    }
+
+    .hamburger__icon{
+        display: block;
+
+    }
+
+    .nav{
+        display: none;
     }
 }

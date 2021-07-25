@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <script src="/scripts/script.js"></script>
     <title>Pizza</title>
 </head>
 
@@ -25,15 +26,27 @@
                     Header
         ==================================-->
 
-        <header id="header" class="page-header">
-            <a class="logo page-header__logo">Pizza club</a>
-            <ul class="nav">
-                <li class="nav__item"><span id="about-us__btn" class="nav__link">Про нас</span></li>
-                <li class="nav__item"><span id="contacts__btn" class="nav__link">Контакти</span></li>
-                <li class="nav__item"><a href="tel: +380986041633" class="nav__link">Замовити піццу</a></li>
-            </ul>
-        </header>
     
+            <header id="header" class="page-header">
+                <img id="burger" class="hamburger__icon" width="24" height="24" src="photos/free-icon-menu-812847.svg" alt="">
+
+                <a id="header__logo" class="logo page-header__logo">Pizza club</a>
+                <ul class="nav">
+                    <li class="nav__item"><span id="about-us__btn" class="nav__link">Про нас</span></li>
+                    <li class="nav__item"><span id="contacts__btn" class="nav__link">Контакти</span></li>
+                    <li class="nav__item"><a href="tel: +38000000000" class="nav__link">Замовити піццу</a></li>
+                </ul>
+
+
+            </header>
+
+            <ul id="nav__mobile" class="nav__mobile">
+                <li class="nav__item mobile"><span id="about-us__btn" class="nav__link">Про нас</span></li>
+                <li class="nav__item mobile"><span id="contacts__btn" class="nav__link">Контакти</span></li>
+                <li class="nav__item mobile"><a href="tel: +38000000000" class="nav__link">Замовити піццу</a></li>
+            </ul>
+
+
 
         <!-- ==============================
                 SVG basket icon
@@ -53,18 +66,18 @@
                 </symbol>
             </defs>
         </svg>
-    
-    
+
+
         <main>
             <!--============================== 
                             Hero section
              =================================-->
-            <section class="hero">
+            <section id="hero" class="hero">
                 <div class="hero-wrap">
                     <h1 class="hero-title">Pizza & Burger Club</h1>
                     <h2 class="hero-subtitle">Food with soul</h2>
-                    <p >Мабуть найсмачніший фаст-фуд на Землі!</p>
-                    <a href="#menu" class="hero-btn">Зробити замовлення</a>
+                    <p>Мабуть найсмачніший фаст-фуд на Землі!</p>
+                    <span id="trade__btn" class="hero-btn">Зробити замовлення</span>
                 </div>
             </section>
 
@@ -76,33 +89,34 @@
 
             </section>
 
-            <section  class="menu">
-                
+            <section class="menu">
+
                 <h2 class="main-title"> Піца: </h2>
-        
+
                 <div class="cards pizza-card">
                     <div class="card">
                         <img class="card__photo" src="photos/bavarian.jpg" alt="">
                         <h4 class="card__title">Баварська</h4>
-                        <p class="card__decription">Томатний соус, Баварські ковбаски, Салямі, Пеппероні, Моцарела, Баранина</p>
+                        <p class="card__decription">Томатний соус, Баварські ковбаски, Салямі, Пеппероні, Моцарела,
+                            Баранина</p>
                         <div class="content-size__checkbox">
                             <h5 class="content-size__title">Оберіть розмір:</h5>
                             <span class="content-size__variant">M</span>
                             <span class="content-size__variant">L</span>
                             <span class="content-size__variant">XL</span>
                         </div>
-        
+
                         <h5 class="product-price">80₴</h5>
-        
+
                         <button class="btn">
                             <span>Замовити</span>
                             <svg width="20px" height="20px" class="btn_icon btn__icon--end">
                                 <use href="#cart">
                             </svg>
                         </button>
-        
+
                     </div>
-        
+
                     <div class="card">
                         <img class="card__photo" src="photos/carbonara.jpg" alt="">
                         <h4 class="card__title">Карбонара</h4>
@@ -113,18 +127,18 @@
                             <span class="content-size__variant">L</span>
                             <span class="content-size__variant">XL</span>
                         </div>
-        
+
                         <h5 class="product-price">130₴</h5>
-        
+
                         <button class="btn">
                             <span>Замовити</span>
                             <svg width="20px" height="20px" class="btn_icon btn__icon--end">
                                 <use href="#cart">
                             </svg>
                         </button>
-        
+
                     </div>
-        
+
                     <div class="card">
                         <img class="card__photo" src="photos/margarita.jpg" alt="">
                         <h4 class="card__title">Маргарита</h4>
@@ -135,18 +149,18 @@
                             <span class="content-size__variant">L</span>
                             <span class="content-size__variant">XL</span>
                         </div>
-        
+
                         <h5 class="product-price">100₴</h5>
-        
+
                         <button class="btn">
                             <span>Замовити</span>
                             <svg width="20px" height="20px" class="btn_icon btn__icon--end">
                                 <use href="#cart">
                             </svg>
                         </button>
-        
+
                     </div>
-        
+
                     <div class="card">
                         <img class="card__photo" src="photos/pepperoni.jpg" alt="">
                         <h4 class="card__title">Пеппероні</h4>
@@ -157,18 +171,18 @@
                             <span class="content-size__variant">L</span>
                             <span class="content-size__variant">XL</span>
                         </div>
-        
+
                         <h5 class="product-price">99₴</h5>
-        
+
                         <button class="btn">
                             <span>Замовити</span>
                             <svg width="20px" height="20px" class="btn_icon btn__icon--end">
                                 <use href="#cart">
                             </svg>
                         </button>
-        
+
                     </div>
-        
+
                     <div class="card">
                         <img class="card__photo" src="photos/vegetarian.jpg" alt="">
                         <h4 class="card__title">Вегетаріанська</h4>
@@ -180,95 +194,98 @@
                             <span class="content-size__variant">L</span>
                             <span class="content-size__variant">XL</span>
                         </div>
-        
+
                         <h5 class="product-price">160₴</h5>
-        
+
                         <button class="btn">
                             <span>Замовити</span>
                             <svg width="20px" height="20px" class="btn_icon btn__icon--end">
                                 <use href="#cart">
                             </svg>
                         </button>
-        
+
                     </div>
                 </div>
-        
-        
+
+
                 <!-- ==============================================================
                                           Burgers                              
             ==================================================================   -->
-        
+
                 <h2 class="main-title"> Бургери/Доп.меню: </h2>
-        
+
                 <div class="cards burger-card">
                     <div class="card">
                         <img class="card__photo" src="photos/p_O.jpg" alt="">
                         <h4 class="card__title">Гамбургер</h4>
-                        <p class="card__decription">Біфштекс із натуральної яловичини, цибуля, шматочок маринованого огірка,
+                        <p class="card__decription">Біфштекс із натуральної яловичини, цибуля, шматочок маринованого
+                            огірка,
                             заправлені гірчицею і кетчупом, у запашній булочці з пшеничного борошна.</p>
                         <div class="content-size__checkbox">
                             <h5 class="content-size__title">Оберіть розмір:</h5>
                             <span class="content-size__variant">M</span>
                             <span class="content-size__variant">XL</span>
                         </div>
-        
+
                         <h5 class="product-price">60₴</h5>
-        
+
                         <button class="btn">
                             <span>Замовити</span>
                             <svg width="20px" height="20px" class="btn_icon btn__icon--end">
                                 <use href="#cart">
                             </svg>
                         </button>
-        
+
                     </div>
-        
+
                     <div class="card">
                         <img class="card__photo" src="photos/Depositphotos_10957284_m-2015.jpg" alt="">
                         <h4 class="card__title">Чізбургер</h4>
                         <p class="card__decription">Біфштекс із натуральної яловичини, шматочок сиру “Чеддер”, шматочок
-                            маринованого огірка та цибуля, заправлені гірчицею і кетчупом, у булочці з пшеничного борошна.</p>
+                            маринованого огірка та цибуля, заправлені гірчицею і кетчупом, у булочці з пшеничного
+                            борошна.</p>
                         <div class="content-size__checkbox">
                             <h5 class="content-size__title">Оберіть розмір:</h5>
                             <span class="content-size__variant">M</span>
                             <span class="content-size__variant">XL</span>
                         </div>
-        
+
                         <h5 class="product-price">80₴</h5>
-        
+
                         <button class="btn">
                             <span>Замовити</span>
                             <svg width="20px" height="20px" class="btn_icon btn__icon--end">
                                 <use href="#cart">
                             </svg>
                         </button>
-        
+
                     </div>
-        
+
                     <div class="card">
                         <img class="card__photo"
                             src="https://brovarnya-rivne.com/img/images_2/big-tejsti-kalorijnost-i-sostav-3-recepta-prigotovleniya-v-domashnih-usloviyah_14.jpg"
                             alt="">
                         <h4 class="card__title">Біг Тейсті</h4>
-                        <p class="card__decription">Натуральна яловичина у поєднанні зі свіжими овочами та плавленим сиром
+                        <p class="card__decription">Натуральна яловичина у поєднанні зі свіжими овочами та плавленим
+                            сиром
                             “Емменталь”.</p>
                         <div class="content-size__checkbox">
                             <h5 class="content-size__title">Оберіть розмір:</h5>
                             <span class="content-size__variant">M</span>
                             <span class="content-size__variant">XL</span>
                         </div>
-        
+
                         <h5 class="product-price">99₴</h5>
-        
+
                         <button class="btn">
                             <span>Замовити</span>
                             <svg width="20px" height="20px" class="btn_icon btn__icon--end">
                                 <use href="#cart">
                             </svg>
                         </button>
-        
+
                     </div>
-        
+
                     <div class="card">
                         <img class="card__photo"
                             src="https://s1.tchkcdn.com/i/13/1/568676_1eb3f655_c62_dd3479765a7b6f7dbe04c87d377735adb09b8e7dabff302aa4pimgpsh_fullsize_distr.jpg"
@@ -280,72 +297,76 @@
                             <span class="content-size__variant">L</span>
                             <span class="content-size__variant">XL</span>
                         </div>
-        
+
                         <div class="content-size__checkbox">
                             <h5 class="content-size__title">Соус:</h5>
                             <span class="content-size__variant">Кетчуп</span>
                             <span class="content-size__variant">Майонез</span>
                             <span class="content-size__variant">Гірчиця</span>
                         </div>
-        
+
                         <h5 class="product-price">25₴</h5>
-        
+
                         <button class="btn">
                             <span>Замовити</span>
                             <svg width="20px" height="20px" class="btn_icon btn__icon--end">
                                 <use href="#cart">
                             </svg>
                         </button>
-        
+
                     </div>
-        
+
                     <div class="card">
                         <img class="card__photo"
                             src="https://img5.goodfon.ru/wallpaper/big/9/6b/pepsi-pepsi-cola-pepsico-gazirovka-banka-pepsi-pepsi.jpg"
                             alt="">
                         <h4 class="card__title">Газований напій</h4>
-        
+
                         <div class="content-size__checkbox">
                             <h5 class="content-size__title">Оберіть напій:</h5>
                             <span class="content-size__variant">Pepsi</span>
                             <span class="content-size__variant">Sprite</span>
                             <span class="content-size__variant">Fanta</span>
                         </div>
-        
+
                         <div class="content-size__checkbox">
                             <h5 class="content-size__title">Оберіть об’єм:</h5>
                             <span class="content-size__variant">M - 0.33L</span>
                             <span class="content-size__variant">L - 0.5L</span>
                             <span class="content-size__variant">XL - 1.5L</span>
                         </div>
-        
+
                         <h5 class="product-price">15₴</h5>
-        
+
                         <button class="btn">
                             <span>Замовити</span>
                             <svg width="20px" height="20px" class="btn_icon btn__icon--end">
                                 <use href="#cart">
                             </svg>
                         </button>
-        
+
                     </div>
                 </div>
             </section>
-    
-    
+
+
 
             <section id="about-us" class="about-us">
                 <h2 class="about-us__title">Хто ми?</h2>
             </section>
 
             <div class="about-us__container">
-               
-                    <img class="container-img" src="photos/247e48e62bd2a8b3cbe8e3034254b8f6.jpg" alt="">
-                    <div class="about-us__description">
-                        <h3>Ми - команда Pizza & Burger Club</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus unde quis perferendis rerum doloremque corporis in quibusdam ullam repudiandae omnis quasi sunt laboriosam nulla eveniet distinctio maxime tempore sit neque repellat amet assumenda, reiciendis inventore praesentium. Velit laborum nulla animi magnam nisi at, corporis dicta obcaecati commodi veritatis quae sunt.</p>
-                    </div>
-                    <img class="container-img" src="photos/b0cd2ba8.jpg" alt="">
+
+                <img class="container-img" src="photos/247e48e62bd2a8b3cbe8e3034254b8f6.jpg" alt="">
+                <div class="about-us__description">
+                    <h3>Ми - команда Pizza & Burger Club</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus unde quis perferendis rerum
+                        doloremque corporis in quibusdam ullam repudiandae omnis quasi sunt laboriosam nulla eveniet
+                        distinctio maxime tempore sit neque repellat amet assumenda, reiciendis inventore praesentium.
+                        Velit laborum nulla animi magnam nisi at, corporis dicta obcaecati commodi veritatis quae sunt.
+                    </p>
+                </div>
+                <img class="container-img" src="photos/b0cd2ba8.jpg" alt="">
 
 
 
@@ -354,7 +375,7 @@
     </div>
 
     <footer class="page-footer" id="contacts">
-        
+
         <div class="work-hours">
             <h4>Робочий графік:</h4>
             <span>Пн-Пт: 10:00 - 19:00</span>
@@ -370,43 +391,8 @@
     </footer>
 
 
-   
-    <script>
-        function listenForClick(btnId, callbackFN, callbackFNId) {
-            var el = document.getElementById(btnId);
-            if(el) {
-                el.addEventListener('click', function() {
-                    callbackFN(callbackFNId);
-                });
-            }  
-        }
 
-        function scrollToElement(elName) {
-            var el = document.getElementById(elName);
-            if (el) {
-                el.scrollIntoView({behavior: 'smooth'});
-            }
-        }
 
-        document.addEventListener('DOMContentLoaded', function() {
-            window.addEventListener('scroll', function (event) {
-                if (window.scrollY > 200) {
-                    document.getElementById('header').classList.add('header__scrolled');
-                }
-
-                else {
-                    document.getElementById('header').classList.remove('header__scrolled');
-                }
-            });
-
-            console.log(document.getElementById('about-us__btn'));
-
-            listenForClick('about-us__btn', scrollToElement, 'about-us');
-            listenForClick('contacts__btn', scrollToElement, 'contacts');
-        });
-
-        
-    </script>
 </body>
 
 </html>
