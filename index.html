@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <script src="/scripts/script.js"></script>
     <title>Pizza</title>
 </head>
 
@@ -393,6 +392,43 @@
 
 
 
+
+    <script>
+        function listenForClick(btnId, callbackFN, callbackFNId) {
+    var el = document.getElementById(btnId);
+    if (el) {
+        el.addEventListener('click', function () {
+            callbackFN(callbackFNId);
+        });
+    }
+}
+
+function scrollToElement(elName) {
+    var el = document.getElementById(elName);
+    if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    window.addEventListener('scroll', function (event) {
+        if (window.scrollY > 200) {
+            document.getElementById('header').classList.add('header__scrolled');
+            document.getElementById('nav__mobile').classList.add('nav__mobile-scrolled');
+        }
+
+        else {
+            document.getElementById('header').classList.remove('header__scrolled');
+            document.getElementById('nav__mobile').classList.remove('nav__mobile-scrolled')
+        }
+    });
+
+    listenForClick('about-us__btn', scrollToElement, 'about-us');
+    listenForClick('contacts__btn', scrollToElement, 'contacts');
+    listenForClick('trade__btn', scrollToElement, 'menu');
+    listenForClick('header__logo', scrollToElement, 'hero');
+});
+    </script>
 </body>
 
 </html>
