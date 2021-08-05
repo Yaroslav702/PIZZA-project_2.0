@@ -135,6 +135,7 @@ label{
     font-family: 'Dancing Script', cursive;
     text-transform: uppercase;
     cursor: pointer;
+    z-index: 2;
 }
 
 .logo:after {

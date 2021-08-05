@@ -1,4 +1,3 @@
-AOS.init();
 function listenForClick(btnId, callbackFN, callbackFNId) {
     var el = document.getElementById(btnId);
     if (el) {
@@ -31,3 +30,5 @@ document.addEventListener('DOMContentLoaded', function () {
     listenForClick('trade__btn', scrollToElement, 'menu');
     listenForClick('header__logo', scrollToElement, 'hero');
 });
+
+AOS.init();
