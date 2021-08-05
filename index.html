@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="script/index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -25,24 +26,24 @@
                     Header
         ==================================-->
 
-    
-            <header id="header" class="page-header">
-                <input type="checkbox" id="toggle">
-                <label for="toggle">
-                    <span class="toggle__el"></span>
-                </label>
 
-                <a id="header__logo" class="logo page-header__logo">Pizza club</a>
-                <nav>
-                    <ul class="menu-header">
-                        <li class="nav__item"><span id="about-us__btn" class="nav__link">Про нас</span></li>
-                        <li class="nav__item"><span id="contacts__btn" class="nav__link">Контакти</span></li>
-                        <li class="nav__item"><a href="tel: +38000000000" class="nav__link">Замовити піццу</a></li>
-                    </ul>
-                </nav>
+        <header id="header" class="page-header">
+            <input type="checkbox" id="toggle">
+            <label for="toggle">
+                <span class="toggle__el"></span>
+            </label>
+
+            <a id="header__logo" class="logo page-header__logo">Pizza club</a>
+            <nav>
+                <ul class="menu-header">
+                    <li class="nav__item"><span id="about-us__btn" class="nav__link">Про нас</span></li>
+                    <li class="nav__item"><span id="contacts__btn" class="nav__link">Контакти</span></li>
+                    <li class="nav__item"><a href="tel: +38000000000" class="nav__link">Замовити піццу</a></li>
+                </ul>
+            </nav>
 
 
-            </header>
+        </header>
 
 
 
@@ -393,39 +394,7 @@
 
 
 
-    <script>
-        function listenForClick(btnId, callbackFN, callbackFNId) {
-    var el = document.getElementById(btnId);
-    if (el) {
-        el.addEventListener('click', function () {
-            callbackFN(callbackFNId);
-        });
-    }
-}
-
-function scrollToElement(elName) {
-    var el = document.getElementById(elName);
-    if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
-    }
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-    window.addEventListener('scroll', function (event) {
-        if (window.scrollY > 200) {
-            document.getElementById('header').classList.add('header__scrolled');
-        }
-
-        else {
-            document.getElementById('header').classList.remove('header__scrolled');
-        }
-    });
-
-    listenForClick('about-us__btn', scrollToElement, 'about-us');
-    listenForClick('contacts__btn', scrollToElement, 'contacts');
-    listenForClick('trade__btn', scrollToElement, 'menu');
-    listenForClick('header__logo', scrollToElement, 'hero');
-});
+    <script src="script/index.js">
     </script>
 </body>
 
