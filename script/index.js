@@ -1,3 +1,4 @@
+AOS.init();
 function listenForClick(btnId, callbackFN, callbackFNId) {
     var el = document.getElementById(btnId);
     if (el) {
