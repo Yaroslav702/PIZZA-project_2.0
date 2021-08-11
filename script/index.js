@@ -1,3 +1,5 @@
+// scroll to elem
+
 function listenForClick(btnId, callbackFN, callbackFNId) {
     var el = document.getElementById(btnId);
     if (el) {
@@ -13,6 +15,8 @@ function scrollToElement(elName) {
         el.scrollIntoView({ behavior: 'smooth' });
     }
 }
+
+// on page scrolled
 
 document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', function (event) {
@@ -31,4 +35,17 @@ document.addEventListener('DOMContentLoaded', function () {
     listenForClick('header__logo', scrollToElement, 'hero');
 });
 
+// on checkbox clicked
+
+document.addEventListener('click', function () {
+var cb = document.getElementById('toggle');    
+    if (cb.checked && window.scrollY < 200) {
+        document.getElementById('header').classList.add('header__clicked');
+    }
+    else{
+        document.getElementById('header').classList.remove('header__clicked');
+    }
+});
+
+// init animation
 AOS.init();

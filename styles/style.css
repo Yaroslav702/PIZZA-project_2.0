@@ -50,6 +50,8 @@ body {
     transition: all 1s;
 }
 
+
+
 nav{
     display: block;
 }
@@ -174,7 +176,10 @@ label{
     height: 50px;
 }
 
-
+.header__clicked{
+    background-color: #3c3c3c;
+    height: 50px;
+}
 
 /* Hero */
 
