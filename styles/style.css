@@ -286,8 +286,10 @@ label{
 }
 
 .card {
+    position: relative;
     text-align: center;
-    /* max-width: 350px; */
+    height: 570px;
+    max-height: 600px;
     transition: box-shadow, 0.2s linear;
     padding: 10px;
     background-color: #f0ecdf;
@@ -337,6 +339,7 @@ label{
 .content-size__variant {
     border-radius: 30%;
     padding: 10px;
+    white-space: nowrap;
 }
 
 .content-size__variant:hover {
@@ -365,6 +368,10 @@ label{
 }
 
 .btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+   transform: translateX(-50%);
     opacity: 0;
     font-size: 17px;
     font-weight: 550;
@@ -373,7 +380,6 @@ label{
     display: inline-flex;
     align-items: center;
     cursor: pointer;
-    margin-bottom: 5px;
     border-radius: 7px;
     background-color: rgba(255, 60, 0, 0.726);
     transition: background-color 0.2s linear;
