@@ -47,5 +47,15 @@ var cb = document.getElementById('toggle');
     }
 });
 
+
+// preloader
+
+window.addEventListener("load", disableLoader)
+
+function disableLoader(){
+    let loader = document.querySelector('.preloader');
+    loader.classList.add('pre-disable');
+}
+
 // init animation
 AOS.init();
