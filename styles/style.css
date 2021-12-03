@@ -180,12 +180,20 @@ label{
 }
 
 .page-footer span{
-    display: block;;
+    display: block;
 }
 
 .page-footer h4{
     text-align: center;
     margin-bottom: 10px;
+}
+
+.privacy-policy{
+    color: #ccc;
+    opacity: .5;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
 }
 
 
